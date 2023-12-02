@@ -238,14 +238,19 @@ ul {
 #product-two,
 #product-three,
 #product-four {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#product-one .product-one-wrapper {
+.product-one-wrapper,
+.product-two-wrapper,
+.product-three-wrapper,
+.product-four-wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #product-one-text,
