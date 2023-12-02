@@ -4,26 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>PROJECT</title>
   </head>
   <body>
     <header class="header">
-      <a href="/" class="header-logo">PROJECT</a>
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li><a href="/">HOME</a></li>
-          <li><a href="/">CATEGORY</a></li>
-          <li><a href="/">ABOUT</a></li>
-          <li><a href="/">CONTACT US</a></li>
-        </ul>
-      </nav>
-      <a href="/" class="header-cart">
-        <img src="./images/cart.png" alt="cart" />
-      </a>
+      <div class="header-nav">
+        <a href="/" class="header-logo">
+          <img src="./images/logo.png" alt="" />
+        </a>
+        <div class="header-nav-div"></div>
+        <nav>
+          <ul class="header-nav-list">
+            <li><a href="/">NEW</a></li>
+            <li><a href="/">PRODUCTS</a></li>
+            <li><a href="/">ACCESSORIES</a></li>
+            <li><a href="/">ABOUT US</a></li>
+            <li><a href="/">FAQs</a></li>
+            <li><a href="/">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-menu">
+        <a href="/" class="header-cart">
+          <img src="./images/cart.png" alt="cart" />
+        </a>
+        <img id="burger-menu" src="./images/menu.png" alt="" />
+        <!-- <div id="burger-menu">
+          <span></span>
+        </div> -->
+      </div>
+      <div id="header-nav-mobile">
+        <nav>
+          <ul id="header-nav-mobile-list">
+            <li><a href="/">NEW</a></li>
+            <li><a href="/">PRODUCTS</a></li>
+            <li><a href="/">ACCESSORIES</a></li>
+            <li><a href="/">ABOUT US</a></li>
+            <li><a href="/">FAQs</a></li>
+            <li><a href="/">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="home-main"></main>
+    <main class="home-main">
+      <section class="top">
+        <div class="top-text">
+          <h3 class="shop">SHOP NOW</h3>
+          <h2 class="new">NEW STREETWEAR OUTFITS</h2>
+        </div>
+        <button>SHOP NOW</button>
+      </section>
+      <section class="middle">
+        <h2 class="product-text">PRODUCTS</h2>
+        <div class="product-container">
+          <div id="product-one">
+            <div class="product-one-wrapper">
+              <img
+                class="product-image"
+                src="./images/products/product1.png"
+                alt=""
+              />
+              <div id="product-one-text">
+                <h3>6.0 OZ ACTIVE SHORT SLEEVE - LARGE SIZES</h3>
+                <h4>$100.00</h4>
+              </div>
+            </div>
+            <div class="product-bottom">
+              <h5>Available in 4 colors</h5>
+              <img class="product-cart" src="./images/cart.png" alt="" />
+            </div>
+          </div>
+          <div id="product-two">
+            <img
+              class="product-image"
+              src="./images/products/product2.png"
+              alt=""
+            />
+            <div id="product-two-text">
+              <h3>6.0 OZ ACTIVE SHORT SLEEVE - LARGE SIZES</h3>
+              <h4>$100.00</h4>
+            </div>
+            <div class="product-bottom">
+              <h5>Available in 4 colors</h5>
+              <img class="product-cart" src="./images/cart.png" alt="" />
+            </div>
+          </div>
+          <div id="product-three">
+            <img
+              class="product-image"
+              src="./images/products/product3.png"
+              alt=""
+            />
+            <div id="product-three-text">
+              <h3>6.0 OZ ACTIVE SHORT SLEEVE - LARGE SIZES</h3>
+              <h4>$100.00</h4>
+            </div>
+            <div class="product-bottom">
+              <h5>Available in 4 colors</h5>
+              <img class="product-cart" src="./images/cart.png" alt="" />
+            </div>
+          </div>
+          <div id="product-four">
+            <img
+              class="product-image"
+              src="./images/products/product4.png"
+              alt=""
+            />
+            <div id="product-four-text">
+              <h3>6.0 OZ ACTIVE SHORT SLEEVE - LARGE SIZES</h3>
+              <h4>$100.00</h4>
+            </div>
+            <div class="product-bottom">
+              <h5>Available in 4 colors</h5>
+              <img class="product-cart" src="./images/cart.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
-      <a href="/" class="header-logo">PROJECT</a>
+      <a href="/" class="header-logo">
+        <img src="./images/logo.png" alt="" />
+      </a>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
