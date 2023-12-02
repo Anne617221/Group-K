@@ -7,31 +7,31 @@ burgerMenu.addEventListener("click", function () {
 });
 
 // One
-var productOne = document.getElementById("product-one");
-var productOneText = document.getElementById("product-one-text");
+var productOne = document.getElementById("home-product-one");
+var productOneText = document.getElementById("home-product-one-text");
 
 productOne.addEventListener("click", function () {
   productOneText.classList.toggle("overlay");
 });
 // TWO
-var productTwo = document.getElementById("product-two");
-var productTwoText = document.getElementById("product-two-text");
+var productTwo = document.getElementById("home-product-two");
+var productTwoText = document.getElementById("home-product-two-text");
 
 productTwo.addEventListener("click", function () {
   productTwoText.classList.toggle("overlay");
 });
 
 // THRE
-var productThree = document.getElementById("product-three");
-var productThreeText = document.getElementById("product-three-text");
+var productThree = document.getElementById("home-product-three");
+var productThreeText = document.getElementById("home-product-three-text");
 
 productThree.addEventListener("click", function () {
   productThreeText.classList.toggle("overlay");
 });
 
 // FOUR
-var productFour = document.getElementById("product-four");
-var productFourText = document.getElementById("product-four-text");
+var productFour = document.getElementById("home-product-four");
+var productFourText = document.getElementById("home-product-four-text");
 
 productFour.addEventListener("click", function () {
   productFourText.classList.toggle("overlay");
