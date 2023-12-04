@@ -307,12 +307,35 @@ ul {
   border-radius: 5px;
 }
 
+/* PRODUCT */
+
+
+/* ACCESSORIES */
+
+/* CART */
+
+/* FAQ */
+
+
+/* ABOUT US */
+
+
+/* CONTACT US */
+
 /* FOOTER */
 .footer {
   padding: 20px;
   background-color: black;
 }
 
+
+
+
+
+
+
+
+/* \responsiveness */
 /* Media query for mobile devices */
 
 @media (max-width: 980px) {
