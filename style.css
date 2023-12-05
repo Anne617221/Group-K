@@ -359,7 +359,9 @@ font-weight: bold;
 
 .product-name{
 	font-weight: bold;
-	padding:19px ;
+
+  padding-top: 18px;
+  padding-bottom:18px;
 }
 
 .info{
