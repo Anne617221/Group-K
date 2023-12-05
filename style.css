@@ -309,20 +309,20 @@
 
 /* PRODUCT */
 .product-display{
- width:300px;
- display:inline-block;
- margin:70px;
+  width:300px;
+  display:inline-block;
+  margin:70px;
 }
 
 .image-k{
- position:relative;
- display:inline-block;	
+  position:relative;
+  display:inline-block;	
 }
 
 .blackshirt-ken{
- width:300px;
- display:inline-block;
- opacity:0.3s;
+  width:300px;
+  display:inline-block;
+  opacity:0.3s;
   
 }
 
@@ -346,11 +346,11 @@
  
 
 .discount{
- position: absolute;
- color:rgb(250, 249, 249);
- background-color:black;
- display:inline-block;
- font-weight: bold;
+  position: absolute;
+  color:rgb(250, 249, 249);
+  background-color:black;
+  display:inline-block;
+  font-weight: bold;
 }
 
 .product-name{
