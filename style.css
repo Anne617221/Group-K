@@ -310,98 +310,56 @@ ul {
 
 
 /* PRODUCT */
-.product-display{
-	width:300px;
-	display:inline-block;
-	margin:70px;
-}
 
-.image-k{
-  position:relative;
-display:inline-block;	
-}
-
-.blackshirt-ken{
-	width:300px;
-	display:inline-block;
-  opacity:0.3s;
-  
-}
-
-.overlay {
-  position: absolute;
-  right:0;
-  left:0;
-  bottom:0;
-  background-color: rgba(0, 0, 0, 0.735);
-  color: white;
-  padding: 30px;
-  text-align:center;
-  opacity: 0; 
-  transition: opacity 0.8s;
-}
-
-.image-k:hover .overlay {
-  opacity: 1;
-    cursor: pointer; 
-}
- 
-
-.discount{
-  position: absolute;
-color:rgb(250, 249, 249);
-background-color:black;
-display:inline-block;
-font-weight: bold;
-
-
-}
-
-.product-name{
-	font-weight: bold;
-	padding:19px 0:
-}
-
-.info{
-	display:inline-block;
-	width:244px;
-}
-
-.price-tag{
-	padding-bottom:10px;
-	
-}
-
-.cartt{
-  display:inline-block;
-}
-
-.cartt:hover{
-    cursor: pointer; 
-}
-
-  
-.cart-logo{
-  width:50px;
-}
-
-.center-container {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  width: auto;
-  height: 600px;
-}
 
 /* ACCESSORIES */
 
 /* CART */
 
 /* FAQ */
+#FAQ-header {
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+  margin: 15px auto;
+}
+#FAQ-header::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  transition: transform 0.3s;
+  transform-origin: center;
+}
+#FAQ-header:hover::after {
+  transform: scale(0);
+}
 
+#FAQ-section-one {
+  text-align: center;
+}
+
+#FAQ-back-to-top {
+  text-align: right;
+  box-sizing: border-box;
+  padding: 5px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  display: inline-block;
+  transition: transform 0.3s;
+  border-radius: 200px;
+}
+
+#FAQ-back-to-top:hover {
+  transform: scale(1.1);
+}
+
+#FAQ-back-to-top {
+}
 
 /* ABOUT US */
-
 
 /* CONTACT US */
 
@@ -410,13 +368,6 @@ font-weight: bold;
   padding: 20px;
   background-color: black;
 }
-
-
-
-
-
-
-
 
 /* \responsiveness */
 /* Media query for mobile devices */
