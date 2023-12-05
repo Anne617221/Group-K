@@ -34,7 +34,7 @@
   height: 30px;
 }
 
-ul {
+.header-nav-list ul {
   list-style-type: none;
 }
 
@@ -307,8 +307,6 @@ ul {
   border-radius: 5px;
 }
 
-
-
 /* PRODUCT */
 .product-display{
 	width:300px;
@@ -400,10 +398,51 @@ font-weight: bold;
 /* CART */
 
 /* FAQ */
+#FAQ-header {
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+  margin: 15px auto;
+}
+#FAQ-header::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  transition: transform 0.3s;
+  transform-origin: center;
+}
+#FAQ-header:hover::after {
+  transform: scale(0);
+}
+
+#FAQ-section-one {
+  text-align: center;
+}
+
+#FAQ-section-one ul li {
+  list-style: decimal;
+}
+
+#FAQ-back-to-top {
+  text-align: right;
+  box-sizing: border-box;
+  padding: 5px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  display: inline-block;
+  transition: transform 0.3s;
+  border-radius: 200px;
+}
+
+#FAQ-back-to-top:hover {
+  transform: scale(1.1);
+}
 
 
 /* ABOUT US */
-
 
 /* CONTACT US */
 
@@ -412,13 +451,6 @@ font-weight: bold;
   padding: 20px;
   background-color: black;
 }
-
-
-
-
-
-
-
 
 /* \responsiveness */
 /* Media query for mobile devices */
