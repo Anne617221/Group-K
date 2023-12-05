@@ -38,3 +38,9 @@ productFour.addEventListener("click", function () {
 });
 
 //S
+
+
+//product page
+
+
+
