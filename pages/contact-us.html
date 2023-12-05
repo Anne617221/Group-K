@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cotact us</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-nav">
+        <a href="/" class="header-logo">
+          <img src="../images/logo.png" alt="" />
+        </a>
+        <div class="header-nav-div"></div>
+        <nav>
+          <ul class="header-nav-list">
+            <li><a href="/">NEW</a></li>
+            <li><a href="./product.html">PRODUCTS</a></li>
+            <li><a href="/">ACCESSORIES</a></li>
+            <li><a href="./about-us.html">ABOUT US</a></li>
+            <li><a href="./FAQ.html">FAQs</a></li>
+            <li><a href="./contact-us.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-menu">
+        <a href="/" class="header-cart">
+          <img src="../images/cart.png" alt="cart" />
+        </a>
+        <img id="burger-menu" src="../images/menu.png" alt="" />
+        <!-- <div id="burger-menu">
+            <span></span>
+          </div> -->
+      </div>
+      <div id="header-nav-mobile">
+        <nav>
+          <ul id="header-nav-mobile-list">
+            <li><a href="/">NEW</a></li>
+            <li><a href="/">PRODUCTS</a></li>
+            <li><a href="/">ACCESSORIES</a></li>
+            <li><a href="/">ABOUT US</a></li>
+            <li><a href="/">FAQs</a></li>
+            <li><a href="/">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="contact-section-one">
+        <div class="form-container">
+          <h1>Contact Form</h1>
+          <form
+            name="contactForm"
+            method="post"
+            onsubmit="return validate()"
+            action="#"
+          >
+            <label for="name">* Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+            <span class="errors"></span><br />
+
+            <label for="email">* Email</label>
+            <input
+              type="text"
+              placeholder="Email address"
+              id="email"
+              name="email"
+            />
+            <span class="errors"></span><br />
+
+            <label for="phone">* Phone</label>
+            <input
+              type="text"
+              placeholder="Phone number"
+              id="phone"
+              name="phone"
+            />
+            <span class="errors"></span><br />
+
+            <label for="subject">* Message</label>
+            <textarea
+              placeholder="Your message"
+              cols="132"
+              rows="5"
+              name="subject"
+              id="subject"
+            ></textarea>
+            <span class="errors"></span><br />
+
+            <button type="submit" value="Submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
