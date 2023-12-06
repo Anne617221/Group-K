@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>PRODUCT PAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
   </head>
   <body>
     <header class="header">
@@ -54,7 +59,7 @@
           <div class="overlay">
             <p>VIEW DETAILS</p>
           </div>
-          <p class="discount">40% OFF</p>
+          <p class="discount">40% <br>OFF</p>
         </div>
         <div>
           <p class="product-name">6.0 ACTIVE STORT SLEEVE - LARGE SIZES</p>
@@ -64,8 +69,14 @@
           <p class="available-color">Available in 4 colors</p>
         </div>
 
-        <div class="cartt">
-          <img class="cart-logo" src="../images/cartlogo.png" />
+        <div class="product-cart">
+          <img class="cart-logo" src="../images/cartlogo.png" onclick="addToCart()" /> 
+          <script>
+          function addToCart() {
+            // You can add your logic for adding the product to the cart here
+            alert("PRODUCT ADDED TO CART");
+          }
+          </Script>
         </div>
       </div>
 
@@ -78,34 +89,34 @@
         </div>
 
         <div>
-          <p class="product-name">6.0 ACTIVE STORT SLEEVE - LARGE SIZES</p>
+          <p class="product-name">13.5 HEAVYWEIGHT GARMENT DYE HOODIE</p>
         </div>
         <div class="info">
-          <p class="price-tag">$25.OO</p>
+          <p class="price-tag">$30.OO</p>
           <p class="available-color">Available in 4 colors</p>
         </div>
 
-        <div class="cartt">
+        <div class="product-cart">
           <img class="cart-logo" src="../images/cartlogo.png" />
         </div>
       </div>
 
       <div class="product-display">
         <div class="image-k">
-          <img class="blackshirt-ken" src="../images/products/product3.png" />
+          <img class="blackshirt-ken3" src="../images/products/product10.jpg" />
           <div class="overlay">
             <p>VIEW DETAILS</p>
           </div>
         </div>
         <div>
-          <p class="product-name">6.0 ACTIVE STORT SLEEVE - LARGE SIZES</p>
+          <p class="product-name">13.5 HEAVYWEIGHT GARMENT DYE HOODIE</p>
         </div>
         <div class="info">
-          <p class="price-tag">$25.OO</p>
+          <p class="price-tag">$30.OO</p>
           <p class="available-color">Available in 4 colors</p>
         </div>
 
-        <div class="cartt">
+        <div class="product-cart">
           <img class="cart-logo" src="../images/cartlogo.png" />
         </div>
       </div>
@@ -120,14 +131,14 @@
           </div>
         </div>
         <div>
-          <p class="product-name">6.0 ACTIVE STORT SLEEVE - LARGE SIZES</p>
+          <p class="product-name">UNISEX V.A.S.K BUCKET HAT - LARGE SIZES</p>
         </div>
         <div class="info">
-          <p class="price-tag">$25.OO</p>
+          <p class="price-tag">$15.OO</p>
           <p class="available-color">Available in 4 colors</p>
         </div>
 
-        <div class="cartt">
+        <div class="product-cart">
           <img class="cart-logo" src="../images/cartlogo.png" />
         </div>
       </div>
@@ -138,46 +149,52 @@
           <div class="overlay">
             <p>VIEW DETAILS</p>
           </div>
+          <p class="discount">40%<br> OFF</p>
         </div>
 
         <div>
-          <p class="product-name">6.0 ACTIVE STORT SLEEVE - LARGE SIZES</p>
+          <p class="product-name">6.0 ACTIVE STORT SLEEVE - MEDIUM SIZES</p>
         </div>
         <div class="info">
           <p class="price-tag">$25.OO</p>
           <p class="available-color">Available in 4 colors</p>
         </div>
 
-        <div class="cartt">
+        <div class="product-cart">
           <img class="cart-logo" src="../images/cartlogo.png" />
         </div>
       </div>
 
       <div class="product-display">
         <div class="image-k">
-          <img class="blackshirt-ken" src="../images/products/product3.png" />
+          <img class="blackshirt-ken" src="../images/products/product9.jpg" />
           <div class="overlay">
             <p>VIEW DETAILS</p>
           </div>
         </div>
         <div>
-          <p class="product-name">6.0 ACTIVE STORT SLEEVE - LARGE SIZES</p>
+          <p class="product-name"> V.A.S.K HEHAD WARMER - LARGE SIZES</p>
         </div>
         <div class="info">
-          <p class="price-tag">$25.OO</p>
+          <p class="price-tag">$10.OO</p>
           <p class="available-color">Available in 4 colors</p>
         </div>
 
-        <div class="cartt">
+        <div class="product-cart">
           <img class="cart-logo" src="../images/cartlogo.png" />
         </div>
       </div>
     </section>
 
-    <p>Wanna see a JavaScript Alert Box??</p>
-    ​
 
-    <button type="button" onclick="myAlert">Show me the alert box!</button>
-    <script src="../index.js"></script>​
+    <div class="christmas">
+     <img class="christmas-sales" src="../images/products/christmas.png"/>
+    ​​</div>
+    <div class="christmas-info">
+    <p>CHRISTMAS <br>SALE 40% OFF</p>
+    </div>
+
+
+    
   </body>
 </html>

@@ -308,6 +308,12 @@
 }
 
 /* PRODUCT */
+body{
+
+  background-image: url("images/products/Rectangle 14.jpg");
+  background-size: cover;
+}
+
 .product-display{
   width:300px;
   display:inline-block;
@@ -324,6 +330,10 @@
   display:inline-block;
   opacity:0.3s;
   
+}
+.blackshirt-ken3{
+  width: 300px;
+  height: 361px;
 }
 
 .overlay {
@@ -348,9 +358,11 @@
 .discount{
   position: absolute;
   color:rgb(250, 249, 249);
-  background-color:black;
+  background-color:rgb(255, 1, 1);
+  padding: 8px;
   display:inline-block;
   font-weight: bold;
+  right:0;
 }
 
 .product-name{
@@ -369,11 +381,11 @@
 	
 }
 
-.cartt{
+.product-cart{
   display:inline-block;
 }
 
-.cartt:hover{
+.product-cart:hover{
  cursor: pointer; 
 }
 
@@ -388,6 +400,26 @@
   height: 100vh;
   width: auto;
   height: 600px;
+}
+
+.christmas-sales{
+  width: 1430px;
+  height: 350px;
+  
+}
+
+.christmas{
+  position: relative;
+  display:inline-block;
+}
+.christmas-info{
+  position:absolute;
+  display:inline-block;
+  left:0;
+  color: #fff;
+  font-size:60px;
+  -webkit-text-stroke: 2px #f10909; 
+  
 }
 
 /* ACCESSORIES */
