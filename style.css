@@ -308,6 +308,87 @@
 }
 
 /* PRODUCT */
+.product-display{
+  width:300px;
+  display:inline-block;
+  margin:70px;
+}
+
+.image-k{
+  position:relative;
+  display:inline-block;	
+}
+
+.blackshirt-ken{
+  width:300px;
+  display:inline-block;
+  opacity:0.3s;
+  
+}
+
+.overlay {
+  position: absolute;
+  right:0;
+  left:0;
+  bottom:0;
+  background-color: rgba(0, 0, 0, 0.735);
+  color: white;
+  padding: 30px;
+  text-align:center;
+  opacity: 0; 
+  transition: opacity 0.8s;
+}
+
+.image-k:hover .overlay {
+  opacity: 1;
+  cursor: pointer; 
+}
+ 
+
+.discount{
+  position: absolute;
+  color:rgb(250, 249, 249);
+  background-color:black;
+  display:inline-block;
+  font-weight: bold;
+}
+
+.product-name{
+	font-weight: bold;
+  padding-top: 18px;
+  padding-bottom:18px;
+}
+
+.info{
+	display:inline-block;
+	width:244px;
+}
+
+.price-tag{
+	padding-bottom:10px;
+	
+}
+
+.cartt{
+  display:inline-block;
+}
+
+.cartt:hover{
+ cursor: pointer; 
+}
+
+  
+.cart-logo{
+  width:50px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+  height: 600px;
+}
 
 /* ACCESSORIES */
 
@@ -357,8 +438,6 @@
   transform: scale(1.1);
 }
 
-#FAQ-back-to-top {
-}
 
 /* ABOUT US */
 
