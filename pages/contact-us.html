@@ -48,14 +48,9 @@
     </header>
     <main>
       <section class="contact-section-one">
-        <div class="form-container">
+        <div class="contact-form-container">
           <h1>Contact Form</h1>
-          <form
-            name="contactForm"
-            method="post"
-            onsubmit="return validate()"
-            action="#"
-          >
+          <form name="contactForm">
             <label for="name">* Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" />
             <span class="errors"></span><br />
@@ -88,10 +83,16 @@
             ></textarea>
             <span class="errors"></span><br />
 
-            <button type="submit" value="Submit">Submit</button>
+            <label for="subscribe">
+              <input type="checkbox" name="subscribe" id="" />Subscribe for our
+              news letter?
+            </label>
+
+            <button onclick="validate()" type="button">Submit</button>
           </form>
         </div>
       </section>
     </main>
+    <script src="../index.js"></script>
   </body>
 </html>

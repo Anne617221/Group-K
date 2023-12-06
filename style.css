@@ -363,7 +363,57 @@
 /* ABOUT US */
 
 /* CONTACT US */
-
+.contact-section-one {
+  margin: 50px 0px;
+}
+.contact-form-container {
+  width: 50%;
+  margin: auto;
+  padding: 2%;
+  border: 1px solid #f7f7f7;
+}
+.contact-form-container label {
+  display: block;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+.contact-form-container input[type="text"],
+.contact-form-container textarea {
+  width: 80%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+.contact-form-container button {
+  width: 82.5%;
+  height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  background: red;
+  line-height: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid red;
+  margin-top: 25px;
+  transition: color 0.4s ease-out, background 0.4s ease-out;
+}
+.contact-form-container button:hover {
+  color: red;
+  background: #fff;
+}
+.contact-form-container .errors {
+  display: block;
+  color: red;
+  margin-top: 5px;
+}
+.contact-form-container .error {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  box-shadow: 0 0 15px 0 rgba(255, 36, 0, 1);
+}
 /* FOOTER */
 .footer {
   padding: 20px;
@@ -409,6 +459,9 @@
 
   .home-product-container img {
     width: 180px;
+  }
+  .contact-form-container {
+    width: 100%;
   }
 }
 
