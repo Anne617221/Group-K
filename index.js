@@ -148,3 +148,8 @@ function validate(e) {
   }
 }
 //product page
+function myAlert() {
+  console.log("HELLO");​
+  alert("Hello! I am an alert box!");​
+  }
+
