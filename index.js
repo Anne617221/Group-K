@@ -1,11 +1,3 @@
-var burgerMenu = document.getElementById("burger-menu");
-var overlay = document.getElementById("header-nav-mobile");
-
-burgerMenu.addEventListener("click", function () {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
-});
-
 // One
 var productOne = document.getElementById("home-product-one");
 var productOneText = document.getElementById("home-product-one-text");

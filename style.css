@@ -223,6 +223,10 @@
   padding-bottom: 8px;
 }
 
+.home-product-bottom h5 {
+  font-size: 16px;
+}
+
 .home-middle .home-product-text:before {
   content: "";
   position: absolute;
@@ -313,9 +317,8 @@
 
 .home-product-bottom .home-product-cart {
   background-color: black;
-  width: 15px;
-  height: 15px;
-  padding: 8px 15px;
+  width: 35px;
+  padding: 5px 10px;
   border-radius: 5px;
 }
 
