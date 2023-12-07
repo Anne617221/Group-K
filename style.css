@@ -311,90 +311,85 @@
 }
 
 /* PRODUCT */
-body{
-
+body {
   background-image: url("images/products/Rectangle 14.jpg");
   background-size: cover;
 }
 
-.product-display{
-  width:300px;
-  display:inline-block;
-  margin:70px;
+.product-display {
+  width: 300px;
+  display: inline-block;
+  margin: 70px;
 }
 
-.image-k{
-  position:relative;
-  display:inline-block;	
+.image-k {
+  position: relative;
+  display: inline-block;
 }
 
-.blackshirt-ken{
-  width:300px;
-  display:inline-block;
-  opacity:0.3s;
-  
+.blackshirt-ken {
+  width: 300px;
+  display: inline-block;
+  opacity: 0.3s;
 }
-.blackshirt-ken3{
+.blackshirt-ken3 {
   width: 300px;
   height: 361px;
 }
 
 .overlay {
   position: absolute;
-  right:0;
-  left:0;
-  bottom:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.735);
   color: white;
   padding: 30px;
-  text-align:center;
-  opacity: 0; 
+  text-align: center;
+  opacity: 0;
   transition: opacity 0.8s;
 }
 
 .image-k:hover .overlay {
   opacity: 1;
-  cursor: pointer; 
+  cursor: pointer;
 }
- 
 
-.discount{
+.discount {
   position: absolute;
-  color:rgb(250, 249, 249);
-  background-color:rgb(255, 1, 1);
+  color: rgb(250, 249, 249);
+  background-color: rgb(255, 1, 1);
   padding: 8px;
-  display:inline-block;
+  display: inline-block;
   font-weight: bold;
-  right:0;
+  right: 0;
 }
 
-.product-name{
-	font-weight: bold;
+.product-name {
+  font-weight: bold;
   padding-top: 18px;
-  padding-bottom:18px;
+  padding-bottom: 18px;
 }
 
-.info{
-	display:inline-block;
-	width:244px;
+.info {
+  display: inline-block;
+  width: 244px;
 }
 
-.price-tag{
-	padding-bottom:10px;
-	
+.price-tag {
+  padding-bottom: 10px;
 }
 
-.product-cart{
-  display:inline-block;
+.product-cart {
+  display: inline-block;
 }
 
-.product-cart:hover{
- cursor: pointer; 
+.product-cart:hover {
+  cursor: pointer;
 }
 
-  
-.cart-logo{
-  width:50px;
+.cart-logo {
+  width: 50px;
 }
 
 .center-container {
@@ -405,24 +400,22 @@ body{
   height: 600px;
 }
 
-.christmas-sales{
+.christmas-sales {
   width: 1430px;
   height: 350px;
-  
 }
 
-.christmas{
+.christmas {
   position: relative;
-  display:inline-block;
+  display: inline-block;
 }
-.christmas-info{
-  position:absolute;
-  display:inline-block;
-  left:0;
+.christmas-info {
+  position: absolute;
+  display: inline-block;
+  left: 0;
   color: #fff;
-  font-size:60px;
-  -webkit-text-stroke: 2px #f10909; 
-  
+  font-size: 60px;
+  -webkit-text-stroke: 2px #f10909;
 }
 
 /* ACCESSORIES */
@@ -451,13 +444,69 @@ body{
   transform: scale(0);
 }
 
-#FAQ-section-one {
+.FAQ-section-one {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.FAQ-hr-line {
+  width: 60%;
+  margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.FAQ-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.FAQ-body {
+  margin: auto;
+  /* text-align: center; */
+  width: 50%;
+  padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.FAQ-page:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.FAQ-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.FAQ-page:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+/* #FAQ-section-one {
   text-align: center;
 }
 
 #FAQ-section-one ul li {
   list-style: decimal;
-}
+} */
 
 #FAQ-back-to-top {
   text-align: right;
@@ -472,7 +521,6 @@ body{
 #FAQ-back-to-top:hover {
   transform: scale(1.1);
 }
-
 
 /* ABOUT US */
 
