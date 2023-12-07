@@ -167,3 +167,24 @@ function showReminder() {
   } else {
   }
 }
+
+// FOQ
+var faq = document.getElementsByClassName("FAQ-page");
+var i;
+
+for (i = 0; i < faq.length; i++) {
+  faq[i].addEventListener("click", function () {
+    console.log("HERE");
+    /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+    this.classList.toggle("FAQ-active");
+
+    /* Toggle between hiding and showing the active panel */
+    var body = this.nextElementSibling;
+    if (!body.style.display || body.style.display === "none") {
+      body.style.display = "block";
+    } else {
+      body.style.display = "none";
+    }
+  });
+}
