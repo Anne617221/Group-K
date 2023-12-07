@@ -153,3 +153,16 @@ function myAlert() {
   console.log("HELLO");
   alert("Hello! I am an alert box!");
 }
+
+//cart page
+window.onload = function() {
+  showReminder();
+};
+function showReminder() {
+  var confirmation = confirm("Welcome to Cart page!Your cart is empty! Ready to get started?");
+
+  if (confirmation) {
+  
+  }else{
+}
+}
