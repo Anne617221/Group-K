@@ -416,6 +416,7 @@ body {
   color: #fff;
   font-size: 60px;
   -webkit-text-stroke: 2px #f10909;
+  font-family: 'Inter', sans-serif;
 }
 
 /* ACCESSORIES */
@@ -444,73 +445,13 @@ body {
   transform: scale(0);
 }
 
-.faq-heading {
-  border-bottom: #777;
-  padding: 20px 60px;
-}
-.FAQ-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.FAQ-hr-line {
-  width: 60%;
-  margin: auto;
-}
-/* Style the buttons that are used to open and close the faq-page body */
-.FAQ-page {
-  /* background-color: #eee; */
-  color: #444;
-  cursor: pointer;
-  padding: 30px 20px;
-  width: 60%;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-  margin: auto;
-}
-.FAQ-body {
-  margin: auto;
-  /* text-align: center; */
-  width: 50%;
-  padding: auto;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.FAQ-active,
-.faq-page:hover {
-  background-color: #f9f9f9;
-}
-
-/* Style the faq-page panel. Note: hidden by default */
-.FAQ-body {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-}
-
-.FAQ-page:after {
-  content: "\02795";
-  /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-.FAQ-active:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
-}
-
-/* #FAQ-section-one {
+#FAQ-section-one {
   text-align: center;
 }
 
 #FAQ-section-one ul li {
   list-style: decimal;
-} */
+}
 
 #FAQ-back-to-top {
   text-align: right;
@@ -544,7 +485,8 @@ body {
   font-size: 1rem;
 }
 .contact-form-container input[type="text"],
-.contact-form-container textarea {
+.contact-form-container textarea,
+.contact-form-container select {
   width: 80%;
   padding: 15px;
   font-size: 1rem;
@@ -626,6 +568,9 @@ body {
   .home-product-container img {
     width: 180px;
   }
+  .contact-form-container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -637,31 +582,31 @@ body {
   }
 }
 /*cart page*/
-#cart-black-rectangle {
-  width: 200px;
-  height: 50px;
+#cart-black-rectangle{
+  width:200px;
+  height:50px;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: -5px;
-  left: -5px;
+  position:relative;
+  top:-5px;
+  left:-5px;
   z-index: 2;
 }
 #cart-white-rectangle {
   width: 200px;
   height: 50px;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid black; 
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 40px;
+  top: 40px; 
   left: 150px;
   z-index: 1;
 }
-#cart-text1 {
+#cart-text1{
   font-size: 30px;
   margin-top: 70px;
   margin-left: 150px;
@@ -669,15 +614,15 @@ body {
   line-height: 1;
   margin-bottom: 0;
 }
-#cart-text2 {
+#cart-text2{
   font-size: 18px;
   margin-top: 10px;
   margin-left: 150px;
   line-height: 1;
   margin-bottom: -20px;
 }
-#cart-linked-text {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
+#cart-linked-text{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
 }
