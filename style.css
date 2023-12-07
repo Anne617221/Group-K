@@ -468,7 +468,8 @@
   font-size: 1rem;
 }
 .contact-form-container input[type="text"],
-.contact-form-container textarea {
+.contact-form-container textarea,
+.contact-form-container select {
   width: 80%;
   padding: 15px;
   font-size: 1rem;
@@ -553,6 +554,13 @@
     width: 180px;
   }
   .contact-form-container {
+    width: 100%;
+  }
+
+  .contact-form-container input[type="text"],
+  .contact-form-container textarea,
+  .contact-form-container select,
+  .contact-form-container button {
     width: 100%;
   }
 }

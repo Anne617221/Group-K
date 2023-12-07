@@ -103,6 +103,7 @@ function validate(e) {
           check = true;
         }
       }
+      console.log("Lekkss");
     }
   }
 
