@@ -581,7 +581,7 @@ body {
   }
 }
 /*cart page*/
-#black-rectangle{
+#cart-black-rectangle{
   width:200px;
   height:50px;
   background-color: black;
@@ -593,7 +593,7 @@ body {
   left:-5px;
   z-index: 2;
 }
-#white-rectangle {
+#cart-white-rectangle {
   width: 200px;
   height: 50px;
   background-color: white;
@@ -605,7 +605,7 @@ body {
   left: 150px;
   z-index: 1;
 }
-#text1{
+#cart-text1{
   font-size: 30px;
   margin-top: 70px;
   margin-left: 150px;
@@ -613,14 +613,14 @@ body {
   line-height: 1;
   margin-bottom: 0;
 }
-#text2{
+#cart-text2{
   font-size: 18px;
   margin-top: 10px;
   margin-left: 150px;
   line-height: 1;
   margin-bottom: -20px;
 }
-#linked-text{
+#cart-linked-text{
   color:white;
   text-decoration:none;
   font-size:18px;
