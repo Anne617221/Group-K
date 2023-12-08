@@ -162,6 +162,12 @@ function myAlert() {
   alert("Hello! I am an alert box!");
 }
 
+//PRODUCt DETAILS
+function onIncrease(params) {
+  alert("OUT OF STOCK")
+  
+}
+
 //cart page
 // window.onload = function () {
 //   showReminder();
