@@ -58,9 +58,90 @@
         </a>
       </div>
     </nav>
+<!-- SIGN IN FORM-->
+<form id="account-form">
+    <div id="account-content">
+    <p id="account-signin">Sign in</p>
+    <lable for="username" id="account-font">Account:</lable> <br>
+    <input id="account-input" type="text"  name="username"  placeholder="email or phone number"><br>
+    <lable for="password" id="account-font">Password:</lable><br>
+    <input id="account-input" type="password"  name="password" ><br>          
+    <input id="account-submit" type="submit" value="sign in"><br>               
+    </div>
+    <div id="account-container">
+        <div id="account-hr-text">
+            <span id="account-hr-text-before"></span>
+            <span id="account-hr-text-content">New to VASK?</span>
+            <span id="account-hr-text-after"></span>
+          </div>
+        </div>  
+        <input id="account-creation" type="submit" value="Create your account"> 
+</form>
+<!--SIGN IN SKIP TO INDEX PAGE-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('account-form');
+      
+        form.addEventListener('submit', function(event) {
+          event.preventDefault(); 
+         
+          alert('Successful Sign In') 
+          setTimeout(function() { 
+          window.location.href = "index.html";
+        }, 200);
+        });
+      });
+    </script>
+<!--CREATION FORM--> 
+<form id="another-form" style="display: none;">
+    <p id="account-lable">New account</p>
+    <lable id="creation-font" for="username" >Account Name</lable><br>
+    <input id="creation-input" type="text" name="username" placeholder="email or phone number"><br>
+    <lable id="creation-font" for="name">First name</lable>
+    <input id="creation-input" typr="text" name="first name"><br>
+    <lable id="creation-font">Sex</lable><select id="creation-sex-select" name="Sex">
+    <option value="Male">Male</option>
+    <option value="Famale">Famale</option>
+    <option value="rather not say">Rather not say</option>
+   </select><br>
+   <lable id="creation-font">Birth Date</lable><input id="creation-birth" type="text" value="Day" size=5><input id="creation-birth" type="text" value="Month" size=5><input id="creation-birth" type="text" value="Year" size=10>
+   <lable for="password">Password</lable><br>
+    <input id="creation-input" type="text" name="password" placeholder="At lest eigth character"><br>
+    <lable id="creation-font" for="repassword">Re-enter password:</lable><br>
+    <input id="creation-input" type="re-enter password"  name="re=enter password"><br>  
+    <input id="creation-submit" type="submit" value="Create a new account"><br> 
+</form>
+<!--SIGN IN FORM SKIP TO CREATION FORM-->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var accountForm = document.getElementById('account-form');
+    var createAccountButton = document.getElementById('account-creation');
+    var anotherForm = document.getElementById('another-form');
+    anotherForm.style.display = 'none';
+    createAccountButton.addEventListener('click', function(event) {
+          event.preventDefault(); 
+          accountForm.style.display = 'none';
+          anotherForm.style.display = 'block';
+      });
+  });
+  </script>
+  <!--CREATION SKIP TO INDEX PAGE SCRIPT-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('another-form');
+      
+        form.addEventListener('submit', function(event) {
+          event.preventDefault(); 
+         
+          alert(' Created Successfully ') 
+          setTimeout(function() { 
+          window.location.href = "index.html";
+        }, 200);
+        });
+      });
+    </script> 
 
 
-    
     <footer class="footer">
         <a href="/" class="header-logo">
           <img src="./images/logo.png" alt="" />

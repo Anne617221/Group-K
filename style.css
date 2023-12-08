@@ -416,6 +416,137 @@ body {
   text-decoration: none;
   font-size: 18px;
 }
+/* ACCUNT */
+/* sign in form */
+#account-form{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  width: 30%;
+  padding: 30px;
+  height: auto; 
+}
+#account-signin{
+ font-size: 40px;
+ text-align: center;
+ margin-top: 0;
+ line-height: 1; 
+}
+#account-font{
+  font-size:20px;
+}
+#account-input{
+  margin-top: 10px;
+  width: 400px;
+  height: 25px;
+}
+#account-submit{
+  margin-top:10px;
+  width: 400px; 
+  height: 40px; 
+  font-size: 16px; 
+  background-color: gray; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+/* New to VASK*/
+#account-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+#account-hr-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+}
+#account-container {
+  max-width: 480px;
+  margin: 0 auto; 
+  overflow: hidden; 
+}
+#account-hr-text-content {
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+#account-hr-text:before,
+#account-hr-text:after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: grey;
+}
+/* skip to creation page buttom*/
+#account-creation{
+  margin-top:10px;
+  width: 200px; 
+  height: 40px; 
+  font-size: 16px; 
+  background-color: gray; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  margin-left: 100px;
+}
+/* creation formt*/
+#account-lable{
+  font-size: 40px;
+ text-align: center;
+ margin-top: 0;
+ line-height: 1; 
+}
+#another-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  width: 30%;
+  padding: 30px;
+  height: auto; 
+}
+#creation-font{
+  margin-top: 5px;
+  font-size:20px;
+}
+#creation-input{
+  margin-top: 5px;
+  width: 400px;
+  height: 25px;
+}
+#creation-submit{
+  margin-top:10px;
+  width: 400px; 
+  height: 40px; 
+  font-size: 16px; 
+  background-color: gray; 
+  color: white; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+#creation-sex-select{
+  margin-top: 5px;
+  width:auto;
+  height:20px;
+}
+#creation-birth{
+  margin-top: 10px;
+  height:20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 /* FAQ */
 #FAQ-header {
