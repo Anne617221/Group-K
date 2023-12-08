@@ -1,6 +1,6 @@
 // // One
 document.addEventListener("DOMContentLoaded", function () {
-  var productOne = document.getElementById("home-product-one");
+  var productOne = document.getElementById("home-product-one-wrapper");
   var productOneText = document.getElementById("home-product-one-text");
 
   productOne.addEventListener("click", function () {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // TWO
 document.addEventListener("DOMContentLoaded", function () {
-  var productTwo = document.getElementById("home-product-two");
+  var productTwo = document.getElementById("home-product-two-wrapper");
   var productTwoText = document.getElementById("home-product-two-text");
 
   productTwo.addEventListener("click", function () {
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // THRE
 document.addEventListener("DOMContentLoaded", function () {
-  var productThree = document.getElementById("home-product-three");
+  var productThree = document.getElementById("home-product-three-wrapper");
   var productThreeText = document.getElementById("home-product-three-text");
 
   productThree.addEventListener("click", function () {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // FOUR
 document.addEventListener("DOMContentLoaded", function () {
-  var productFour = document.getElementById("home-product-four");
+  var productFour = document.getElementById("home-product-four-wrapper");
   var productFourText = document.getElementById("home-product-four-text");
 
   productFour.addEventListener("click", function () {
@@ -181,22 +181,21 @@ function onIncrease(params) {
 // }
 
 // FOQ
-var faq = document.getElementsByClassName("FAQ-page");
+var faq = document.getElementsByClassName("faq-page");
 var i;
 
 for (i = 0; i < faq.length; i++) {
   faq[i].addEventListener("click", function () {
-    console.log("HERE");
     /* Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel */
-    this.classList.toggle("FAQ-active");
+    this.classList.toggle("faq-active");
 
     /* Toggle between hiding and showing the active panel */
     var body = this.nextElementSibling;
-    if (!body.style.display || body.style.display === "none") {
-      body.style.display = "block";
-    } else {
+    if (body.style.display === "block") {
       body.style.display = "none";
+    } else {
+      body.style.display = "block";
     }
   });
 }

@@ -105,10 +105,10 @@
   align-items: center;
 }
 
-.home-product-one-wrapper,
-.home-product-two-wrapper,
-.home-product-three-wrapper,
-.home-product-four-wrapper {
+#home-product-one-wrapper,
+#home-product-two-wrapper,
+#home-product-three-wrapper,
+#home-product-four-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -398,6 +398,10 @@ body {
 /* ACCESSORIES */
 
 /* CART */
+
+.cart-page {
+  padding: 80px 0px;
+}
 #cart-black-rectangle {
   width: 200px;
   height: 50px;
@@ -623,8 +627,8 @@ body {
 
 /* FAQ */
 #FAQ-header {
-  width: max-content;
   position: relative;
+  text-align: center;
   cursor: pointer;
   margin: 15px auto;
 }
@@ -633,8 +637,8 @@ body {
   position: absolute;
   bottom: -5px;
   height: 4px;
-  width: 100%;
   left: 0;
+  right: 0;
   background-color: black;
   transition: transform 0.3s;
   transform-origin: center;
@@ -663,6 +667,62 @@ body {
 
 #FAQ-back-to-top:hover {
   transform: scale(1.1);
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hr-line {
+  width: 60%;
+  margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 70%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body {
+  margin: auto;
+  /* text-align: center; */
+  width: 70%;
+  padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.faq-active,
+.faq-page:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.faq-page:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq-active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
 
 /* ABOUT US */
@@ -852,6 +912,13 @@ body {
 
   .aboutus-victor {
     flex-direction: column;
+  }
+
+  .faq-page {
+    width: 100%;
+  }
+  .faq-body {
+    width: 100%;
   }
 
   #account-form,
