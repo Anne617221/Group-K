@@ -163,8 +163,7 @@ function addToCart() {
 
 //PRODUCt DETAILS
 function onIncrease(params) {
-  alert("OUT OF STOCK")
-  
+  alert("OUT OF STOCK");
 }
 
 //cart page
@@ -616,4 +615,31 @@ function showResults(count) {
 //To Generate A New Game
 btnNewGame.addEventListener("click", () => {
   window.location.reload();
+});
+
+// SIGNUP and SIGN In
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("another-form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    alert(" Created Successfully ");
+    setTimeout(function () {
+      window.location.href = "../index.html";
+    }, 200);
+  });
+});
+
+//
+document.addEventListener("DOMContentLoaded", function () {
+  var accountForm = document.getElementById("account-form");
+  var createAccountButton = document.getElementById("account-creation");
+  var anotherForm = document.getElementById("another-form");
+  anotherForm.style.display = "none";
+  createAccountButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    accountForm.style.display = "none";
+    anotherForm.style.display = "block";
+  });
 });

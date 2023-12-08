@@ -5,13 +5,18 @@
 }
 
 /* HEADER */
-
-.cart {
-  display: none;
+.nav-account {
+  margin-left: 10px;
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.cart:hover .header-nav-mobile {
-  display: block;
+.nav-account a {
+  text-decoration: none;
 }
 
 /* HOME */
@@ -72,7 +77,7 @@
   background-color: #d6cec7;
 }
 
-.home-middle .home-product-text {
+.home-product-text {
   position: relative;
   padding-bottom: 8px;
 }
@@ -81,7 +86,7 @@
   font-size: 16px;
 }
 
-.home-middle .home-product-text:before {
+.home-product-text:before {
   content: "";
   position: absolute;
   width: 50%;
@@ -174,6 +179,20 @@
   width: 35px;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.home-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 15px;
+  background-color: burlywood;
+}
+
+.home-bottom p {
+  padding: 0 10px;
+  font-size: 20px;
 }
 
 /* PRODUCT */
@@ -287,14 +306,14 @@ body {
 }
 
 /* QUICK VIEW */
-.quickview{
+.quickview {
   display: flex;
   height: 100vh;
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.quickview-wrapper{
+.quickview-wrapper {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -303,7 +322,7 @@ body {
   align-items: center;
 }
 
-.quickview-two{
+.quickview-two {
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -319,28 +338,30 @@ body {
   gap: 1px;
 }
 
-.quickview-colors .color{
+.quickview-colors .color {
   width: 50px;
   aspect-ratio: 1;
 }
 
-.quickview-colors .color-one{
+.quickview-colors .color-one {
   background-color: green;
 }
-.quickview-colors .color-two{
+.quickview-colors .color-two {
   background-color: black;
-}.quickview-colors  .color-three{
+}
+.quickview-colors .color-three {
   background-color: red;
-}.quickview-colors  .color-four{
+}
+.quickview-colors .color-four {
   background-color: orange;
 }
 
-.quickview-quantity{
+.quickview-quantity {
   display: flex;
   gap: 8px;
 }
 
-.quickview-quantity .quantity{
+.quickview-quantity .quantity {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -349,14 +370,13 @@ body {
   background-color: white;
 }
 
-.quickview-quantity button{
+.quickview-quantity button {
   outline-style: none;
   padding: 5px;
   border: none;
-
 }
 
-.quickview-quantity h3{
+.quickview-quantity h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,49 +438,52 @@ body {
 }
 /* cart and account footer*/
 #footer {
-  background-color:  black;
-  color:white;
+  background-color: black;
+  color: white;
   position: absolute;
   width: 100%;
   bottom: 0;
   height: 100px;
 }
+
 /* ACCUNT */
 /* sign in form */
-#account-form{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+#account-form {
+  margin-top: 50px;
   border: 1px solid black;
   width: 30%;
   padding: 30px;
-  height: auto; 
+  height: fit-content;
 }
-#account-signin{
- font-size: 40px;
- text-align: center;
- margin-top: 0;
- line-height: 1; 
+#account-signin {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0;
+  line-height: 1;
 }
-#account-font{
-  font-size:20px;
+#account-font {
+  font-size: 20px;
 }
-#account-input{
+#account-input {
   margin-top: 10px;
-  width: 350px;
+  width: 100%;
   height: 25px;
 }
-#account-submit{
-  margin-top:10px;
-  width: 350px; 
-  height: 40px; 
-  font-size: 16px; 
-  background-color: gray; 
-  color: white; 
-  border: none; 
-  border-radius: 4px; 
-  cursor: pointer; 
+#account-submit {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /* New to VASK*/
 #account-text {
@@ -479,8 +502,8 @@ body {
 }
 #account-container {
   max-width: 480px;
-  margin: 0 auto; 
-  overflow: hidden; 
+  margin: 0 auto;
+  overflow: hidden;
 }
 #account-hr-text-content {
   padding: 0 10px;
@@ -490,71 +513,68 @@ body {
 }
 #account-hr-text:before,
 #account-hr-text:after {
-  content: '';
+  content: "";
   flex-grow: 1;
   height: 1px;
   background-color: grey;
 }
 /* skip to creation page buttom*/
-#account-creation{
-  margin-top:10px;
-  width: 200px; 
-  height: 40px; 
-  font-size: 16px; 
-  background-color: gray; 
-  color: white; 
-  border: none; 
-  border-radius: 4px; 
-  cursor: pointer; 
-  margin-left: 80px;
+#account-creation {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /* creation formt*/
-#account-lable{
+#account-lable {
   font-size: 30px;
-  text-align:center;
+  text-align: center;
   top: 0;
- line-height: 1; 
+  line-height: 1;
 }
-#another-form{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#another-form {
+  margin-top: 50px;
+
   border: 1px solid black;
   width: 30%;
   padding: 30px;
-  height: auto;  
+  height: fit-content;
 }
-#creation-font{
+#creation-font {
   margin-top: 5px;
-  font-size:20px;
+  font-size: 20px;
 }
-#creation-input{
-  width: 350px;
+#creation-input {
+  width: 100%;
   height: 30px;
-  font-size:15px;
+  font-size: 15px;
 }
-#creation-submit{
-  margin-top:10px;
-  width: 350px; 
-  height: 40px; 
-  font-size: 16px; 
-  background-color: gray; 
-  color: white; 
-  border: none; 
-  border-radius: 4px; 
-  cursor: pointer; 
-}
-#creation-sex-select{
-  font-size:15px;
-  margin-top: 5px;
-  height:30px;
-  margin-left:5px;
-}
-#creation-birth{
-  font-size:15px;
+#creation-submit {
   margin-top: 10px;
-  height:30px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#creation-sex-select {
+  font-size: 15px;
+  margin-top: 5px;
+  height: 30px;
+  margin-left: 5px;
+}
+#creation-birth {
+  font-size: 15px;
+  margin-top: 10px;
+  height: 30px;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -772,12 +792,17 @@ body {
   .quickview-wrapper {
     flex-direction: column;
   }
-  .quickview-wrapper .quickview-two{
+  .quickview-wrapper .quickview-two {
     align-items: center;
   }
-.quickview-wrapper{
-  padding-top: 60px;
-}
+  .quickview-wrapper {
+    padding-top: 60px;
+  }
+
+  #account-form,
+  #another-form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -785,7 +810,6 @@ body {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
-
 
 /* GAME */
 
