@@ -372,6 +372,50 @@ body {
 /* ACCESSORIES */
 
 /* CART */
+#cart-black-rectangle {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -5px;
+  left: -5px;
+  z-index: 2;
+}
+#cart-white-rectangle {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40px;
+  left: 150px;
+  z-index: 1;
+}
+#cart-text1 {
+  font-size: 30px;
+  margin-top: 70px;
+  margin-left: 150px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0;
+}
+#cart-text2 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 150px;
+  line-height: 1;
+  margin-bottom: -20px;
+}
+#cart-linked-text {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
 
 /* FAQ */
 #FAQ-header {
@@ -600,51 +644,6 @@ body {
   }
 }
 
-/*cart page*/
-#cart-black-rectangle {
-  width: 200px;
-  height: 50px;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -5px;
-  left: -5px;
-  z-index: 2;
-}
-#cart-white-rectangle {
-  width: 200px;
-  height: 50px;
-  background-color: white;
-  border: 1px solid black;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 40px;
-  left: 150px;
-  z-index: 1;
-}
-#cart-text1 {
-  font-size: 30px;
-  margin-top: 70px;
-  margin-left: 150px;
-  font-weight: 900;
-  line-height: 1;
-  margin-bottom: 0;
-}
-#cart-text2 {
-  font-size: 18px;
-  margin-top: 10px;
-  margin-left: 150px;
-  line-height: 1;
-  margin-bottom: -20px;
-}
-#cart-linked-text {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
 
 /* GAME */
 
