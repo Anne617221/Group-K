@@ -1,33 +1,41 @@
 // // One
-var productOne = document.getElementById("home-product-one");
-var productOneText = document.getElementById("home-product-one-text");
+document.addEventListener("DOMContentLoaded", function () {
+  var productOne = document.getElementById("home-product-one");
+  var productOneText = document.getElementById("home-product-one-text");
 
-// productOne.addEventListener("click", function () {
-//   productOneText.classList.toggle("overlay");
-// });
-// // TWO
-// var productTwo = document.getElementById("home-product-two");
-// var productTwoText = document.getElementById("home-product-two-text");
+  productOne.addEventListener("click", function () {
+    productOneText.classList.toggle("overlay");
+  });
+});
+// TWO
+document.addEventListener("DOMContentLoaded", function () {
+  var productTwo = document.getElementById("home-product-two");
+  var productTwoText = document.getElementById("home-product-two-text");
 
-// productTwo.addEventListener("click", function () {
-//   productTwoText.classList.toggle("overlay");
-// });
+  productTwo.addEventListener("click", function () {
+    productTwoText.classList.toggle("overlay");
+  });
+});
 
-// // THRE
-// var productThree = document.getElementById("home-product-three");
-// var productThreeText = document.getElementById("home-product-three-text");
+// THRE
+document.addEventListener("DOMContentLoaded", function () {
+  var productThree = document.getElementById("home-product-three");
+  var productThreeText = document.getElementById("home-product-three-text");
 
-// productThree.addEventListener("click", function () {
-//   productThreeText.classList.toggle("overlay");
-// });
+  productThree.addEventListener("click", function () {
+    productThreeText.classList.toggle("overlay");
+  });
+});
 
-// // FOUR
-// var productFour = document.getElementById("home-product-four");
-// var productFourText = document.getElementById("home-product-four-text");
+// FOUR
+document.addEventListener("DOMContentLoaded", function () {
+  var productFour = document.getElementById("home-product-four");
+  var productFourText = document.getElementById("home-product-four-text");
 
-// productFour.addEventListener("click", function () {
-//   productFourText.classList.toggle("overlay");
-// });
+  productFour.addEventListener("click", function () {
+    productFourText.classList.toggle("overlay");
+  });
+});
 
 //form
 function validate(e) {
@@ -155,18 +163,18 @@ function myAlert() {
 }
 
 //cart page
-window.onload = function () {
-  showReminder();
-};
-function showReminder() {
-  var confirmation = confirm(
-    "Welcome to Cart page!Your cart is empty! Ready to get started?"
-  );
+// window.onload = function () {
+//   showReminder();
+// };
+// function showReminder() {
+//   var confirmation = confirm(
+//     "Welcome to Cart page!Your cart is empty! Ready to get started?"
+//   );
 
-  if (confirmation) {
-  } else {
-  }
-}
+//   if (confirmation) {
+//   } else {
+//   }
+// }
 
 // FOQ
 var faq = document.getElementsByClassName("FAQ-page");
@@ -190,16 +198,16 @@ for (i = 0; i < faq.length; i++) {
 }
 
 //--- GAME ---//
-let countSpan = document.querySelector(".count span");
-let flagImgDiv = document.querySelector(".flag-img");
-let flagImg = document.querySelector(".flag-img img");
-let flagOptions = document.querySelector(".flag-options ul");
-let flagLis = document.querySelectorAll(".flag-options ul li");
+let countSpan = document.querySelector(".game-count span");
+let flagImgDiv = document.querySelector(".game-flag-img");
+let flagImg = document.querySelector(".game-flag-img img");
+let flagOptions = document.querySelector(".game-flag-options ul");
+let flagLis = document.querySelectorAll(".game-flag-options ul li");
 let score = document.querySelector("h3 span");
-let scoreDiv = document.querySelector(".score");
-let correctAns = document.querySelector(".score .right span");
-let incorrectAns = document.querySelector(".score .incorrect span");
-let btnNewGame = document.querySelector("#newGame");
+let scoreDiv = document.querySelector(".game-score");
+let correctAns = document.querySelector(".game-score .game-right span");
+let incorrectAns = document.querySelector(".game-score .game-incorrect span");
+let btnNewGame = document.querySelector("#game-newGame");
 
 let currentIndex = 0;
 let rightAnswer = 0;
