@@ -278,20 +278,19 @@ body {
 }
 
 .center-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-content: center;
-  height: 100vh;
   width: auto;
-  height: 600px;
 }
 
 .christmas-sales {
-  width: 1430px;
+  width: 100vw;
   height: 350px;
 }
 
 .christmas {
-  position: relative;
+  /* position: relative; */
   display: inline-block;
 }
 .christmas-info {
@@ -710,7 +709,6 @@ body {
 }
 .aboutus-victor {
   display: flex;
-  padding: 100px;
 }
 .about-image img {
   max-width: 100%;
@@ -802,6 +800,9 @@ body {
   .home-middle .home-product-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .center-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 @media (max-width: 768px) {
   /* Hide nav on mobile screens */
@@ -816,7 +817,9 @@ body {
   .home-middle .home-product-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
+  .center-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .contact-form-container {
     width: 100%;
   }
@@ -838,6 +841,10 @@ body {
 
   .footer {
     align-items: center;
+  }
+
+  .aboutus-victor {
+    flex-direction: column;
   }
 
   #account-form,
