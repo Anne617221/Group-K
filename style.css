@@ -292,14 +292,10 @@ body {
 }
 
 .christmas-sales {
-  width: 100vw;
+  width: 99vw;
   height: 350px;
 }
 
-.christmas {
-  /* position: relative; */
-  display: inline-block;
-}
 .christmas-info {
   position: absolute;
   display: inline-block;
@@ -309,6 +305,12 @@ body {
   -webkit-text-stroke: 2px #f10909;
   font-family: "Inter", sans-serif;
   font-weight: bold;
+ 
+}
+.center{
+  position: absolute;
+  left: 200px;
+  display: block;
 }
 
 /* QUICK VIEW */

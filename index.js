@@ -160,8 +160,10 @@ function validate(e) {
 function addToCart() {
   alert("OUT OF STOCK");
 }
-
-//PRODUCt DETAILS
+function greenhoodie() {
+  alert("ADDED TO CART");
+}
+//quick view page
 function onIncrease(params) {
   alert("OUT OF STOCK");
 }
