@@ -416,6 +416,15 @@ body {
   text-decoration: none;
   font-size: 18px;
 }
+/* cart and account footer*/
+#footer {
+  background-color:  black;
+  color:white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+}
 /* ACCUNT */
 /* sign in form */
 #account-form{
@@ -423,7 +432,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #ccc;
+  border: 1px solid black;
   width: 30%;
   padding: 30px;
   height: auto; 
@@ -439,12 +448,12 @@ body {
 }
 #account-input{
   margin-top: 10px;
-  width: 400px;
+  width: 350px;
   height: 25px;
 }
 #account-submit{
   margin-top:10px;
-  width: 400px; 
+  width: 350px; 
   height: 40px; 
   font-size: 16px; 
   background-color: gray; 
@@ -497,13 +506,13 @@ body {
   border: none; 
   border-radius: 4px; 
   cursor: pointer; 
-  margin-left: 100px;
+  margin-left: 80px;
 }
 /* creation formt*/
 #account-lable{
-  font-size: 40px;
- text-align: center;
- margin-top: 0;
+  font-size: 30px;
+  text-align:center;
+  top: 0;
  line-height: 1; 
 }
 #another-form{
@@ -511,23 +520,23 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #ccc;
+  border: 1px solid black;
   width: 30%;
   padding: 30px;
-  height: auto; 
+  height: auto;  
 }
 #creation-font{
   margin-top: 5px;
   font-size:20px;
 }
 #creation-input{
-  margin-top: 5px;
-  width: 400px;
-  height: 25px;
+  width: 350px;
+  height: 30px;
+  font-size:15px;
 }
 #creation-submit{
   margin-top:10px;
-  width: 400px; 
+  width: 350px; 
   height: 40px; 
   font-size: 16px; 
   background-color: gray; 
@@ -537,13 +546,15 @@ body {
   cursor: pointer; 
 }
 #creation-sex-select{
+  font-size:15px;
   margin-top: 5px;
-  width:auto;
-  height:20px;
+  height:30px;
+  margin-left:5px;
 }
 #creation-birth{
+  font-size:15px;
   margin-top: 10px;
-  height:20px;
+  height:30px;
   margin-left: 5px;
   margin-right: 5px;
 }
