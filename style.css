@@ -374,11 +374,19 @@ body {
 }
 
 .about-image {
+  position: relative;
+  width: 300px;
   flex: 1;
   margin-right: 40px;
   overflow: hidden;
 }
-
+.image-victor {
+  width: 500px;
+}
+.aboutus-victor {
+  display: flex;
+  padding: 100px;
+}
 .about-image img {
   max-width: 100%;
   height: auto;
@@ -390,6 +398,8 @@ body {
 }
 
 .about-content-2 {
+  position: relative;
+  display: inline-block;
   flex: 1;
 }
 
