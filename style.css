@@ -74,6 +74,7 @@
   background-image: url("./images/hero-bg.png");
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .home-top .home-top-text {
@@ -541,22 +542,18 @@ body {
 
 .game-container h1 {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   text-transform: capitalize;
   color: black;
-  padding: 25px 0;
+  padding-top: 25px;
+  font-family: "Press Start 2P";
 }
 
 .game-container h3 {
-  font-size: 20px;
-  padding: 20px 0;
+  font-size: 16px;
   text-transform: capitalize;
   color: black;
-  padding: 2rem;
-}
-
-.game-container {
-  margin: auto;
+  font-family: "Press Start 2P";
 }
 
 .game-box {
@@ -564,14 +561,24 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.game-box span {
+  font-family: "Press Start 2P";
 }
 
 .game-box .game-count {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   color: black;
   text-transform: capitalize;
   padding: 20px;
+  font-family: "Press Start 2P";
+}
+
+.game-score span {
+  font-family: "Press Start 2P";
 }
 
 .game-flags {
@@ -625,13 +632,13 @@ body {
   font-size: 18px;
   border-radius: 5px;
   font-weight: bold;
-  letter-spacing: 0.1rem;
+  letter-spacing: 20px;
 }
 
 .game-score {
   display: none;
   padding: 20px;
-  border-radius: 0.5rem;
+  border-radius: 10px;
 }
 
 .game-score .game-right,
@@ -657,7 +664,7 @@ body {
   h1,
   h3,
   .game-box .game-count {
-    font-size: 25px;
+    font-size: 12px;
   }
 
   .game-flags .game-flag-img,
@@ -667,12 +674,6 @@ body {
 
   .game-flags .game-flag-options ul li {
     width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  h1 {
-    font-size: 6rem;
   }
 }
 
