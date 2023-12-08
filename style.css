@@ -5,13 +5,18 @@
 }
 
 /* HEADER */
-
-.cart {
-  display: none;
+.nav-account {
+  margin-left: 10px;
+  color: black;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.cart:hover .header-nav-mobile {
-  display: block;
+.nav-account a {
+  text-decoration: none;
 }
 
 /* HOME */
@@ -72,7 +77,7 @@
   background-color: #d6cec7;
 }
 
-.home-middle .home-product-text {
+.home-product-text {
   position: relative;
   padding-bottom: 8px;
 }
@@ -81,7 +86,7 @@
   font-size: 16px;
 }
 
-.home-middle .home-product-text:before {
+.home-product-text:before {
   content: "";
   position: absolute;
   width: 50%;
@@ -100,10 +105,10 @@
   align-items: center;
 }
 
-.home-product-one-wrapper,
-.home-product-two-wrapper,
-.home-product-three-wrapper,
-.home-product-four-wrapper {
+#home-product-one-wrapper,
+#home-product-two-wrapper,
+#home-product-three-wrapper,
+#home-product-four-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -176,16 +181,36 @@
   border-radius: 5px;
 }
 
+.home-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 15px;
+  background-color: burlywood;
+}
+
+.home-bottom p {
+  padding: 0 10px;
+  font-size: 20px;
+}
+
 /* PRODUCT */
 body {
   background-image: url("images/products/Rectangle 14.jpg");
   background-size: cover;
 }
 
+.product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-display {
   width: 300px;
   display: inline-block;
-  margin: 70px;
+  padding: 50px 0px;
 }
 
 .image-k {
@@ -259,20 +284,20 @@ body {
 }
 
 .center-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
   justify-content: center;
-  height: 100vh;
   width: auto;
-  height: 600px;
 }
 
 .christmas-sales {
-  width: 1430px;
+  width: 100vw;
   height: 350px;
 }
 
 .christmas {
-  position: relative;
+  /* position: relative; */
   display: inline-block;
 }
 .christmas-info {
@@ -287,14 +312,14 @@ body {
 }
 
 /* QUICK VIEW */
-.quickview{
+.quickview {
   display: flex;
   height: 100vh;
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.quickview-wrapper{
+.quickview-wrapper {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -303,7 +328,7 @@ body {
   align-items: center;
 }
 
-.quickview-two{
+.quickview-two {
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -319,28 +344,30 @@ body {
   gap: 1px;
 }
 
-.quickview-colors .color{
+.quickview-colors .color {
   width: 50px;
   aspect-ratio: 1;
 }
 
-.quickview-colors .color-one{
+.quickview-colors .color-one {
   background-color: green;
 }
-.quickview-colors .color-two{
+.quickview-colors .color-two {
   background-color: black;
-}.quickview-colors  .color-three{
+}
+.quickview-colors .color-three {
   background-color: red;
-}.quickview-colors  .color-four{
+}
+.quickview-colors .color-four {
   background-color: orange;
 }
 
-.quickview-quantity{
+.quickview-quantity {
   display: flex;
   gap: 8px;
 }
 
-.quickview-quantity .quantity{
+.quickview-quantity .quantity {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -349,14 +376,13 @@ body {
   background-color: white;
 }
 
-.quickview-quantity button{
+.quickview-quantity button {
   outline-style: none;
   padding: 5px;
   border: none;
-
 }
 
-.quickview-quantity h3{
+.quickview-quantity h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,6 +398,10 @@ body {
 /* ACCESSORIES */
 
 /* CART */
+
+.cart-page {
+  padding: 80px 0px;
+}
 #cart-black-rectangle {
   width: 200px;
   height: 50px;
@@ -416,51 +446,90 @@ body {
   text-decoration: none;
   font-size: 18px;
 }
-/* cart and account footer*/
-#footer {
-  background-color:  black;
-  color:white;
-  position: absolute;
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
   width: 100%;
-  bottom: 0;
-  height: 100px;
+  padding: 20px 30px;
+  padding: 30px;
+  gap: 20px;
 }
+
+.footer-two,
+.footer-two-link {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-two {
+  justify-content: space-between;
+  align-items: last baseline;
+}
+
+.footer-two img {
+  height: 50px;
+}
+.footer-company,
+.footer-connect {
+  color: white;
+}
+
+.footer-two ul {
+  list-style: none;
+}
+
+.footer-two .footer-company ul li a,
+.footer-connect ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer p {
+  text-align: center;
+}
+
 /* ACCUNT */
 /* sign in form */
-#account-form{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+#account-form {
+  margin-top: 50px;
   border: 1px solid black;
   width: 30%;
   padding: 30px;
-  height: auto; 
+  height: fit-content;
 }
-#account-signin{
- font-size: 40px;
- text-align: center;
- margin-top: 0;
- line-height: 1; 
+#account-signin {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0;
+  line-height: 1;
 }
-#account-font{
-  font-size:20px;
+#account-font {
+  font-size: 20px;
 }
-#account-input{
+#account-input {
   margin-top: 10px;
-  width: 350px;
+  width: 100%;
   height: 25px;
 }
-#account-submit{
-  margin-top:10px;
-  width: 350px; 
-  height: 40px; 
-  font-size: 16px; 
-  background-color: gray; 
-  color: white; 
-  border: none; 
-  border-radius: 4px; 
-  cursor: pointer; 
+#account-submit {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /* New to VASK*/
 #account-text {
@@ -479,8 +548,8 @@ body {
 }
 #account-container {
   max-width: 480px;
-  margin: 0 auto; 
-  overflow: hidden; 
+  margin: 0 auto;
+  overflow: hidden;
 }
 #account-hr-text-content {
   padding: 0 10px;
@@ -490,79 +559,76 @@ body {
 }
 #account-hr-text:before,
 #account-hr-text:after {
-  content: '';
+  content: "";
   flex-grow: 1;
   height: 1px;
   background-color: grey;
 }
 /* skip to creation page buttom*/
-#account-creation{
-  margin-top:10px;
-  width: 200px; 
-  height: 40px; 
-  font-size: 16px; 
-  background-color: gray; 
-  color: white; 
-  border: none; 
-  border-radius: 4px; 
-  cursor: pointer; 
-  margin-left: 80px;
+#account-creation {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /* creation formt*/
-#account-lable{
+#account-lable {
   font-size: 30px;
-  text-align:center;
+  text-align: center;
   top: 0;
- line-height: 1; 
+  line-height: 1;
 }
-#another-form{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#another-form {
+  margin-top: 50px;
+
   border: 1px solid black;
   width: 30%;
   padding: 30px;
-  height: auto;  
+  height: fit-content;
 }
-#creation-font{
+#creation-font {
   margin-top: 5px;
-  font-size:20px;
+  font-size: 20px;
 }
-#creation-input{
-  width: 350px;
+#creation-input {
+  width: 100%;
   height: 30px;
-  font-size:15px;
+  font-size: 15px;
 }
-#creation-submit{
-  margin-top:10px;
-  width: 350px; 
-  height: 40px; 
-  font-size: 16px; 
-  background-color: gray; 
-  color: white; 
-  border: none; 
-  border-radius: 4px; 
-  cursor: pointer; 
-}
-#creation-sex-select{
-  font-size:15px;
-  margin-top: 5px;
-  height:30px;
-  margin-left:5px;
-}
-#creation-birth{
-  font-size:15px;
+#creation-submit {
   margin-top: 10px;
-  height:30px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#creation-sex-select {
+  font-size: 15px;
+  margin-top: 5px;
+  height: 30px;
+  margin-left: 5px;
+}
+#creation-birth {
+  font-size: 15px;
+  margin-top: 10px;
+  height: 30px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
 /* FAQ */
 #FAQ-header {
-  width: max-content;
   position: relative;
+  text-align: center;
   cursor: pointer;
   margin: 15px auto;
 }
@@ -571,8 +637,8 @@ body {
   position: absolute;
   bottom: -5px;
   height: 4px;
-  width: 100%;
   left: 0;
+  right: 0;
   background-color: black;
   transition: transform 0.3s;
   transform-origin: center;
@@ -601,6 +667,62 @@ body {
 
 #FAQ-back-to-top:hover {
   transform: scale(1.1);
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hr-line {
+  width: 60%;
+  margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+  /* background-color: #eee; */
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 70%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+}
+.faq-body {
+  margin: auto;
+  /* text-align: center; */
+  width: 70%;
+  padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.faq-active,
+.faq-page:hover {
+  background-color: #f9f9f9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.faq-page:after {
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.faq-active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
 
 /* ABOUT US */
@@ -654,7 +776,6 @@ body {
 }
 .aboutus-victor {
   display: flex;
-  padding: 100px;
 }
 .about-image img {
   max-width: 100%;
@@ -693,6 +814,10 @@ body {
   width: 50%;
   margin: auto;
   padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
   border: 1px solid #f7f7f7;
 }
 .contact-form-container label {
@@ -708,6 +833,12 @@ body {
   font-size: 1rem;
   border: 1px solid #ccc;
 }
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-form-container button {
   width: 82.5%;
   height: 50px;
@@ -738,11 +869,6 @@ body {
   transition: 0.2s;
   box-shadow: 0 0 15px 0 rgba(255, 36, 0, 1);
 }
-/* FOOTER */
-.footer {
-  padding: 20px;
-  background-color: black;
-}
 
 /* \responsiveness */
 /* Media query for mobile devices */
@@ -750,6 +876,9 @@ body {
 @media (max-width: 980px) {
   .home-middle .home-product-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .center-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (max-width: 768px) {
@@ -765,19 +894,47 @@ body {
   .home-middle .home-product-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
+  .center-container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
   .contact-form-container {
     width: 100%;
   }
   .quickview-wrapper {
     flex-direction: column;
   }
-  .quickview-wrapper .quickview-two{
+  .quickview-wrapper .quickview-two {
     align-items: center;
   }
-.quickview-wrapper{
-  padding-top: 60px;
-}
+  .quickview-wrapper {
+    padding-top: 60px;
+  }
+  .footer-two {
+    flex-direction: column;
+  }
+  .footer-two img {
+    width: 100%;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .aboutus-victor {
+    flex-direction: column;
+  }
+
+  .faq-page {
+    width: 100%;
+  }
+  .faq-body {
+    width: 100%;
+  }
+
+  #account-form,
+  #another-form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -785,7 +942,6 @@ body {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
-
 
 /* GAME */
 
