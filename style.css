@@ -419,6 +419,86 @@ body {
 
 /* ABOUT US */
 
+.about-content-one {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.about-content-one h2 {
+  font-size: 50px;
+  color: rgb(53, 20, 83);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.about-content-one h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #4caf50;
+}
+
+.about-content-one p {
+  margin-bottom: 35px;
+}
+
+.about-section-2 {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.about-image {
+  position: relative;
+  width: 300px;
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+}
+.image-victor {
+  width: 500px;
+}
+.aboutus-victor {
+  display: flex;
+  padding: 100px;
+}
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+}
+.about-image :hover img {
+  transform: scale(1.2);
+}
+
+.about-content-2 {
+  position: relative;
+  display: inline-block;
+  flex: 1;
+}
+
+.about-content-2 .read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1eb53a;
+  color: white;
+  font-size: 19px;
+  text-decoration: none;
+  border-radius: 26px;
+  transition: 0.3s;
+}
+.about-content-2 .read-more:hover {
+  background-color: #100303;
+}
 /* CONTACT US */
 .contact-section-one {
   margin: 50px 0px;
