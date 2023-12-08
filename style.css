@@ -436,14 +436,50 @@ body {
   text-decoration: none;
   font-size: 18px;
 }
-/* cart and account footer*/
-#footer {
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   color: white;
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  height: 100px;
+  padding: 20px 30px;
+  padding: 30px;
+  gap: 20px;
+}
+
+.footer-two,
+.footer-two-link {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-two {
+  justify-content: space-between;
+  align-items: last baseline;
+}
+
+.footer-two img {
+  height: 50px;
+}
+.footer-company,
+.footer-connect {
+  color: white;
+}
+
+.footer-two ul {
+  list-style: none;
+}
+
+.footer-two .footer-company ul li a,
+.footer-connect ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer p {
+  text-align: center;
 }
 
 /* ACCUNT */
@@ -758,11 +794,6 @@ body {
   transition: 0.2s;
   box-shadow: 0 0 15px 0 rgba(255, 36, 0, 1);
 }
-/* FOOTER */
-.footer {
-  padding: 20px;
-  background-color: black;
-}
 
 /* \responsiveness */
 /* Media query for mobile devices */
@@ -797,6 +828,16 @@ body {
   }
   .quickview-wrapper {
     padding-top: 60px;
+  }
+  .footer-two {
+    flex-direction: column;
+  }
+  .footer-two img {
+    width: 100%;
+  }
+
+  .footer {
+    align-items: center;
   }
 
   #account-form,
