@@ -187,7 +187,7 @@
   align-items: center;
   gap: 20px;
   padding: 50px 15px;
-  background-color: burlywood;
+  background-color: #deb887;
 }
 
 .home-bottom p {
@@ -233,7 +233,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.735);
+  background-color: #000000;
   color: white;
   padding: 30px;
   text-align: center;
