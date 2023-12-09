@@ -878,6 +878,7 @@ body {
   /* Hide nav on mobile screens */
   .home-top {
     height: 80vh;
+    background-attachment: fixed;
   }
 
   .home-top .home-new {
