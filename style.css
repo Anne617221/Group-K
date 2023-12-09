@@ -823,15 +823,15 @@ body {
 }
 .contact-form-container label {
   display: block;
-  margin-top: 25px;
-  font-size: 1rem;
+  margin-top: 10px;
+  font-size: 15px;
 }
 .contact-form-container input[type="text"],
 .contact-form-container textarea,
 .contact-form-container select {
   width: 80%;
   padding: 15px;
-  font-size: 1rem;
+  font-size: 15px;
   border: 1px solid #ccc;
 }
 .contactForm {
