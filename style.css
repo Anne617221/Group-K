@@ -30,7 +30,7 @@
   position: relative;
   background-image: url("./images/hero-bg.png");
   background-position: center;
-  height: 100vh;
+  height: 85vh;
   background-attachment: fixed;
 }
 
@@ -305,9 +305,8 @@ body {
   -webkit-text-stroke: 2px #f10909;
   font-family: "Inter", sans-serif;
   font-weight: bold;
- 
 }
-.center{
+.center {
   position: absolute;
   left: 200px;
   display: block;
