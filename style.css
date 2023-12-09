@@ -141,7 +141,7 @@
   padding: 10px;
   position: absolute;
   color: white;
-  background: rgba(0, 0, 0, 0.4);
+  background: #00000066;
   inset: 0;
 }
 
@@ -187,7 +187,7 @@
   align-items: center;
   gap: 20px;
   padding: 50px 15px;
-  background-color: burlywood;
+  background-color: #deb887;
 }
 
 .home-bottom p {
@@ -233,7 +233,7 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.735);
+  background-color: #000000;
   color: white;
   padding: 30px;
   text-align: center;
@@ -249,7 +249,7 @@ body {
 .discount {
   position: absolute;
   color: rgb(250, 249, 249);
-  background-color: rgb(255, 1, 1);
+  background-color: #ff0101;
   padding: 8px;
   display: inline-block;
   font-weight: bold;
@@ -300,14 +300,13 @@ body {
   position: absolute;
   display: inline-block;
   left: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 60px;
-  -webkit-text-stroke: 2px #f10909;
+  -webkit-text-stroke: 2px #ff0101;
   font-family: "Inter", sans-serif;
   font-weight: bold;
 }
-.center {
-  position: absolute;
+.center{
   left: 200px;
   display: block;
 }
@@ -342,30 +341,30 @@ body {
 
 .quickview-colors {
   display: flex;
-  gap: 1px;
+  gap: 8px;
 }
 
 .quickview-colors .color {
   width: 50px;
-  aspect-ratio: 1;
+  aspect-ratio: 2;
 }
 
 .quickview-colors .color-one {
-  background-color: green;
+  background-color: #2945c0;
 }
 .quickview-colors .color-two {
-  background-color: black;
+  background-color: #000000;
 }
 .quickview-colors .color-three {
-  background-color: red;
+  background-color: #ffffff;
 }
 .quickview-colors .color-four {
-  background-color: orange;
+  background-color: #41b9d1;
 }
 
 .quickview-quantity {
   display: flex;
-  gap: 8px;
+  gap: 7px;
 }
 
 .quickview-quantity .quantity {
@@ -391,7 +390,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   background-color: white;
-  color: #838181;
+  color: #808080;
   padding: 0 30px;
   height: 50px;
 }
@@ -526,7 +525,7 @@ body {
   width: 100%;
   height: 40px;
   font-size: 16px;
-  background-color: gray;
+  background-color: #808080;
   color: white;
   border: none;
   border-radius: 4px;
@@ -563,7 +562,7 @@ body {
   content: "";
   flex-grow: 1;
   height: 1px;
-  background-color: grey;
+  background-color: #808080;
 }
 /* skip to creation page buttom*/
 #account-creation {
@@ -606,7 +605,7 @@ body {
   width: 100%;
   height: 40px;
   font-size: 16px;
-  background-color: gray;
+  background-color: #808080;
   color: white;
   border: none;
   border-radius: 4px;
@@ -664,6 +663,7 @@ body {
   display: inline-block;
   transition: transform 0.3s;
   border-radius: 200px;
+  
 }
 
 #FAQ-back-to-top:hover {
@@ -682,7 +682,7 @@ body {
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
   /* background-color: #eee; */
-  color: #444;
+  color:#808080;
   cursor: pointer;
   padding: 30px 20px;
   width: 70%;
@@ -740,7 +740,7 @@ body {
 
 .about-content-one h2 {
   font-size: 50px;
-  color: rgb(53, 20, 83);
+  color: #000000;
   margin-bottom: 25px;
   position: relative;
 }
@@ -752,7 +752,7 @@ body {
   height: 4px;
   display: block;
   margin: 0 auto;
-  background-color: #4caf50;
+  background-color: #000000;
 }
 
 .about-content-one p {
@@ -797,7 +797,7 @@ body {
 .about-content-2 .read-more {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #1eb53a;
+  background-color: #000000;
   color: white;
   font-size: 19px;
   text-decoration: none;
