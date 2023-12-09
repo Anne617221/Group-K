@@ -306,7 +306,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: bold;
 }
-.center{
+.center {
   left: 200px;
   display: block;
 }
@@ -663,7 +663,6 @@ body {
   display: inline-block;
   transition: transform 0.3s;
   border-radius: 200px;
-  
 }
 
 #FAQ-back-to-top:hover {
@@ -682,7 +681,7 @@ body {
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
   /* background-color: #eee; */
-  color:#808080;
+  color: #808080;
   cursor: pointer;
   padding: 30px 20px;
   width: 70%;
@@ -857,18 +856,10 @@ body {
   color: red;
   background: #fff;
 }
-.contact-form-container .errors {
+.contact-form-container .error {
   display: block;
   color: red;
   margin-top: 5px;
-}
-.contact-form-container .error {
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  box-shadow: 0 0 15px 0 rgba(255, 36, 0, 1);
 }
 
 /* \responsiveness */

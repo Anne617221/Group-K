@@ -32,7 +32,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="error" class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -63,10 +63,10 @@
       <section class="contact-section-one">
         <div class="contact-form-container">
           <h1>Contact Form</h1>
-          <form name="contactForm" class="contactForm">
+          <form name="contactForm" class="contactForm" id="form">
             <label for="name">* Name</label>
             <input type="text" id="name" name="name" placeholder="Your name" />
-            <span class="errors"></span><br />
+            <span class="error" id="nameError"></span><br />
 
             <label for="email">* Email</label>
             <input
@@ -75,7 +75,7 @@
               id="email"
               name="email"
             />
-            <span class="errors"></span><br />
+            <span class="error" id="emailError"></span><br />
 
             <label for="phone">* Phone</label>
             <input
@@ -84,7 +84,7 @@
               id="phone"
               name="phone"
             />
-            <span class="errors"></span><br />
+            <span class="error" id="phoneError"></span><br />
 
             <label for="how">* How did you hear about us?</label>
             <select name="how" id="how">
@@ -93,7 +93,7 @@
               <option value="instagram">Instagram</option>
               <option value="twiter">Twitter</option>
             </select>
-            <span class="errors"></span><br />
+            <span class="error" id="howError"></span><br />
 
             <label for="subject">* Message</label>
             <textarea
@@ -103,11 +103,11 @@
               name="subject"
               id="subject"
             ></textarea>
-            <span class="errors"></span><br />
+            <span class="error" id="subjectError"></span><br />
 
             <label for="subscribe">
-              <input type="checkbox" name="subscribe" id="" />Subscribe for our
-              news letter?
+              <input type="checkbox" name="subscribe" id="subscribe" />Subscribe
+              for our news letter?
             </label>
 
             <button onclick="validate()" type="button">Submit</button>
