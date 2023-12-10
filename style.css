@@ -447,7 +447,10 @@ body {
   text-decoration: none;
   font-size: 18px;
 }
-
+#main{
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
 /* FOOTER */
 .footer {
   display: flex;
