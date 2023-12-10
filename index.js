@@ -182,7 +182,7 @@ function onIncrease(params) {
 //   }
 // }
 
-// FOQ
+// FAQ
 var faq = document.getElementsByClassName("faq-page");
 var i;
 
@@ -200,6 +200,10 @@ for (i = 0; i < faq.length; i++) {
       body.style.display = "block";
     }
   });
+}
+
+function ThankYou() {
+  alert("Thank You");
 }
 
 //--- GAME ---//

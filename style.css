@@ -396,8 +396,6 @@ body {
   height: 50px;
 }
 
-/* ACCESSORIES */
-
 /* CART */
 
 .cart-page {
@@ -658,9 +656,11 @@ body {
 
 #FAQ-back-to-top {
   text-align: right;
+
   box-sizing: border-box;
   padding: 5px;
-  background: linear-gradient(90deg, #03a9f4, #f441a5);
+  background: black;
+  color: white;
   display: inline-block;
   transition: transform 0.3s;
   border-radius: 200px;
@@ -794,7 +794,7 @@ body {
   flex: 1;
 }
 
-.about-content-2 .read-more {
+.about-content-2 .thank-you {
   display: inline-block;
   padding: 10px 20px;
   background-color: #1eb53a;
@@ -804,7 +804,7 @@ body {
   border-radius: 26px;
   transition: 0.3s;
 }
-.about-content-2 .read-more:hover {
+.about-content-2 .thank-you:hover {
   background-color: #100303;
 }
 /* CONTACT US */
