@@ -1,4 +1,7 @@
 // // One
+//For each of the product
+// the id of the element is gotten
+//on evert click event listener, the overlay class is being toggles
 document.addEventListener("DOMContentLoaded", function () {
   var productOne = document.getElementById("home-product-one-wrapper");
   var productOneText = document.getElementById("home-product-one-text");
@@ -38,125 +41,74 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //form
-function validate(e) {
-  var fields = document.querySelectorAll(
-    '.contact-form-container textarea, .contact-form-container input[type="text"]'
-  );
-  var regEx;
-  var removeSpan;
-  var par;
-  var check = false;
-  var val;
-  var errArr = [];
+function validate() {
+  //We get the id of each form component we want to validate
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var how = document.getElementById("how").value;
+  var subject = document.getElementById("subject").value;
 
-  for (var i = 0; i < fields.length; i++) {
-    if (fields[i].value === "") {
-      if (fields[i].nextElementSibling.classList.contains("error")) {
-        removeSpan = fields[i].nextElementSibling;
-        par = fields[i].parentNode;
-        par.removeChild(removeSpan);
-        fields[i].nextElementSibling.innerHTML =
-          fields[i].placeholder + " is required?";
-        fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-        check = false;
-        errArr.push(fields[i]);
-      }
-      fields[i].nextElementSibling.innerHTML =
-        fields[i].placeholder + " is required?";
-      fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-      check = false;
-      errArr.push(fields[i]);
-    } else {
-      // check if message and name values contain valid characters.
-      if (fields[i].id !== "email" && fields[i].id !== "phone") {
-        val = isValidChar(fields[i]);
-        if (val === false) {
-          fields[i].nextElementSibling.innerHTML = "Are you trying to HACK ME!";
-          fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-          check = false;
-          errArr.push(fields[i]);
-        } else {
-          fields[i].nextElementSibling.innerHTML = "";
-          fields[i].style.boxShadow = "none";
-          check = true;
-        }
-      }
-
-      if (fields[i].id === "phone") {
-        val = isValidPhone(fields[i]);
-        if (val === false) {
-          fields[i].nextElementSibling.innerHTML =
-            "Your phone number is not valid?";
-          fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-          check = false;
-          errArr.push(fields[i]);
-        } else {
-          fields[i].nextElementSibling.innerHTML = "";
-          fields[i].style.boxShadow = "none";
-          check = true;
-        }
-      }
-
-      if (fields[i].id === "email") {
-        val = isValidEmail(fields[i]);
-        if (val === false) {
-          fields[i].nextElementSibling.innerHTML =
-            "Your email address is not valid?";
-          fields[i].style.boxShadow = "0 0 2px 1px #cc0001";
-          check = false;
-          errArr.push(fields[i]);
-        } else {
-          fields[i].nextElementSibling.innerHTML = "";
-          fields[i].style.boxShadow = "none";
-          check = true;
-        }
-      }
-      console.log("Lekkss");
-    }
+  //Check if each of the fields is valid
+  //focus on the invalid field
+  //and display the error message
+  if (name === "") {
+    document.getElementById("nameError").innerHTML = "Please enter name";
+    document.getElementById("name").focus();
+    return;
+  } else {
+    document.getElementById("nameError").innerHTML = "";
   }
 
-  if (check === false) {
-    var count = 0;
-    var toErr = setInterval(function () {
-      var e = errArr[0].offsetTop + -25;
-      var pos = Math.abs(e);
-      if (count < pos) {
-        count++;
-        window.scrollTo(0, count);
-      } else {
-        clearInterval(toErr);
-      }
-    }, 1);
+  if (!isValidEmail(email)) {
+    document.getElementById("emailError").innerHTML =
+      "Please enter a valid email address.";
+    document.getElementById("email").focus();
+    return;
+  } else {
+    document.getElementById("emailError").innerHTML = "";
+  }
+  if (how === "") {
+    document.getElementById("howError").innerHTML = "Please select an option.";
+    document.getElementById("how").focus();
+    return;
+  } else {
+    document.getElementById("howError").innerHTML = "";
+  }
+  if (subject === "") {
+    document.getElementById("subjectError").innerHTML = "Please enter subject.";
+    document.getElementById("subject").focus();
+    return;
+  } else {
+    document.getElementById("subjectError").innerHTML = "";
   }
 
-  return check;
-
-  // Helper functions.
-  function isValidEmail(e) {
-    regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    var email = e.value;
-    if (!regEx.test(email)) {
-      return false;
-    }
+  if (!isValidPhone(phone)) {
+    document.getElementById("phoneError").innerHTML =
+      "Please enter a valid phone number.";
+    document.getElementById("phone").focus();
+    return;
+  } else {
+    document.getElementById("phoneError").innerHTML = "";
   }
 
-  function isValidChar(e) {
-    regEx = /^[a-zA-Z@#$%!?^&*()_+\-=\[\]{};':"\\|,.\/? ]*$/;
-    var value = e.value;
-    if (!regEx.test(value)) {
-      return false;
-    }
-  }
+  // All validations passed, show alert with name
+  alert("Form submitted successfully for: " + name);
 
-  function isValidPhone(e) {
-    regEx = /^[+]?[(]?[+]?\d{2,4}[)]?[-\s]?\d{2,8}[-\s]?\d{2,8}$/;
-    var value = e.value;
-    if (!regEx.test(value)) {
-      return false;
-    }
-  }
+  // Reset the form after all values have been filled
+  document.getElementById("form").reset();
 }
-//product page
+//METHODS USING REGEX TO VALIDATE EMAIL AND PHONENUMBER
+function isValidEmail(email) {
+  var regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  return regEx.test(email);
+}
+
+function isValidPhone(phone) {
+  var regEx = /^[+]?[(]?[+]?\d{2,4}[)]?[-\s]?\d{2,8}[-\s]?\d{2,8}$/;
+  return regEx.test(phone);
+}
+
 function addToCart() {
   alert("OUT OF STOCK");
 }
@@ -207,6 +159,7 @@ function ThankYou() {
 }
 
 //--- GAME ---//
+//We get each of the element from the games page that we want to modify
 let countSpan = document.querySelector(".game-count span");
 let flagImgDiv = document.querySelector(".game-flag-img");
 let flagImg = document.querySelector(".game-flag-img img");
@@ -218,8 +171,13 @@ let correctAns = document.querySelector(".game-score .game-right span");
 let incorrectAns = document.querySelector(".game-score .game-incorrect span");
 let btnNewGame = document.querySelector("#game-newGame");
 
+//we declare variables to hold the current index of the game
+//and the correct answer
 let currentIndex = 0;
 let rightAnswer = 0;
+
+//an array of objects
+//showing the image, options and correct answer
 const countries = [
   {
     img: "argentina.png",
@@ -524,14 +482,11 @@ const countries = [
 ];
 
 function getQuestions() {
-  console.log("HOW");
-
   let questions = countries;
-  console.log(questions);
   //Number Of Question Each New Game
   let qCount = 10;
   questionNum(qCount);
-  //Random Question Each New Game
+  //Random game of 10 is being generated from the list of couintries
   questions = questions.sort(() => Math.random() - Math.random()).slice(0, 10);
 
   //Add Questions Data
@@ -575,6 +530,7 @@ function questionNum(num) {
   countSpan.innerHTML = num;
 }
 
+//this function loops through the cquestions and sets the corrects tags resoectivelys
 function addQuestionData(obj, count) {
   if (currentIndex < count) {
     flagImg.src = `../images/countries/${obj.img}`;
@@ -590,6 +546,8 @@ function addQuestionData(obj, count) {
   }
 }
 
+//This function loops through the question and check to see if the selected option
+//is the same as the correct answer
 function checkAnswer(rAnswer, count) {
   let choosenAnswer;
   for (let i = 0; i < flagLis.length; i++) {
@@ -618,6 +576,7 @@ function showResults(count) {
 }
 
 //To Generate A New Game
+//this reloads the page
 btnNewGame.addEventListener("click", () => {
   window.location.reload();
 });
