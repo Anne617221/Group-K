@@ -122,9 +122,10 @@ function onIncrease(params) {
 
 //cart page
 if (
-  window.location.href === "http://127.0.0.1:5500/pages/cart.html" ||
+  window.location.pathname === "/pages/cart.html" ||
   window.location.href === "https://vask-group-k.netlify.app/pages/cart"
 ) {
+  console.log(window.location);
   window.onload = function () {
     showReminder();
   };
