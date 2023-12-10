@@ -121,18 +121,23 @@ function onIncrease(params) {
 }
 
 //cart page
-// window.onload = function () {
-//   showReminder();
-// };
-// function showReminder() {
-//   var confirmation = confirm(
-//     "Welcome to Cart page!Your cart is empty! Ready to get started?"
-//   );
+if (
+  window.location.href === "http://127.0.0.1:5500/pages/cart.html" ||
+  window.location.href === "https://vask-group-k.netlify.app/pages/cart"
+) {
+  window.onload = function () {
+    showReminder();
+  };
+  function showReminder() {
+    var confirmation = confirm(
+      "Welcome to Cart page!Your cart is empty! Ready to get started?"
+    );
 
-//   if (confirmation) {
-//   } else {
-//   }
-// }
+    if (confirmation) {
+    } else {
+    }
+  }
+}
 
 // FAQ
 var faq = document.getElementsByClassName("faq-page");
